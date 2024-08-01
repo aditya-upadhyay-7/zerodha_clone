@@ -5,7 +5,7 @@ const Funds = () => {
   return (
     <>
       <div className="funds">
-        <p>Instant, zero-cost fund transfers with UPI </p>
+        <p>Instant, zero-cost fund transfers with <b><i>UPI</i></b> </p>
         <Link className="btn btn-green">Add funds</Link>
         <Link className="btn btn-blue">Withdraw</Link>
       </div>
@@ -19,57 +19,57 @@ const Funds = () => {
           <div className="table">
             <div className="data">
               <p>Available margin</p>
-              <p className="imp colored">4,043.10</p>
+              <p className="imp colored" style={{marginLeft:"270px"}}>4,043.10</p>
             </div>
             <div className="data">
               <p>Used margin</p>
-              <p className="imp">3,757.30</p>
+              <p className="imp colored" style={{marginLeft:"280px"}}>3,757.30</p>
             </div>
             <div className="data">
               <p>Available cash</p>
-              <p className="imp">4,043.10</p>
+              <p className="imp colored" style={{marginLeft:"270px"}}>4,043.10</p>
             </div>
             <hr />
             <div className="data">
               <p>Opening Balance</p>
-              <p>4,043.10</p>
+              <p style={{marginLeft:"308px"}}>4,043.10</p>
             </div>
             <div className="data">
               <p>Opening Balance</p>
-              <p>3736.40</p>
+              <p style={{marginLeft:"308px"}}>3736.40</p>
             </div>
             <div className="data">
               <p>Payin</p>
-              <p>4064.00</p>
+              <p style={{marginLeft:"331px"}}>4064.00</p>
             </div>
             <div className="data">
               <p>SPAN</p>
-              <p>0.00</p>
+              <p style={{marginLeft:"350px"}}>0.00</p>
             </div>
             <div className="data">
               <p>Delivery margin</p>
-              <p>0.00</p>
+              <p style={{marginLeft:"332px"}}>0.00</p>
             </div>
             <div className="data">
               <p>Exposure</p>
-              <p>0.00</p>
+              <p style={{marginLeft:"326px"}}>0.00</p>
             </div>
             <div className="data">
               <p>Options premium</p>
-              <p>0.00</p>
+              <p style={{marginLeft:"326px"}}>0.00</p>
             </div>
             <hr />
             <div className="data">
               <p>Collateral (Liquid funds)</p>
-              <p>0.00</p>
+              <p style={{marginLeft:"324px"}}>0.00</p>
             </div>
             <div className="data">
               <p>Collateral (Equity)</p>
-              <p>0.00</p>
+              <p style={{marginLeft:"324px"}}>0.00</p>
             </div>
             <div className="data">
               <p>Total Collateral</p>
-              <p>0.00</p>
+              <p style={{marginLeft:"324px"}}>0.00</p>
             </div>
           </div>
         </div>

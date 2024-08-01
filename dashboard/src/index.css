@@ -37,9 +37,11 @@ code {
 }
 
 .funds p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: rgb(179, 179, 179);
-  margin-right: 8px;
+  margin-right: 10px;
+  margin-top: 30px;
+
 }
 
 .btn {
@@ -52,11 +54,11 @@ code {
 }
 
 .btn-green {
-  background: #4caf50;
+  background-color: #4caf50 !important;
 }
 
 .btn-blue {
-  background: #4184f3;
+  background-color: #4184f3;
 }
 
 .row {
@@ -94,12 +96,12 @@ code {
 
 .table {
   border: 1px solid #ddd;
+  width: 400px;
   padding: 5% 8%;
 }
 
 .table .data {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -113,12 +115,13 @@ code {
 }
 
 .imp {
-  font-size: 1.5rem;
+  align-items: end !important;
+  font-size: 1.5rem !important;
   color: #313131;
 }
 
 .colored {
-  color: #4184f3;
+  color: #4184f3 !important;
 }
 
 .table hr {
@@ -134,6 +137,7 @@ code {
 }
 
 .commodity p {
+  font-size: 15px !important;
   margin-bottom: 10%;
   color: #c9c9c9;
 }
@@ -653,7 +657,7 @@ hr {
   height: 6%;
   border: none;
   padding: 15px 20px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 400;
   color: rgb(241, 241, 241);
   border-bottom: 0.8px solid rgb(235, 234, 234);
@@ -683,7 +687,7 @@ hr {
   align-items: center;
   justify-content: space-between;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   position: relative;
 }
 
@@ -841,3 +845,4 @@ hr {
 .action:hover {
   background-color: rgb(212, 212, 212);
 }
+

@@ -11,7 +11,6 @@ const { HoldingsModel } = require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel");
 const { OrdersModel } = require("./model/OrdersModel");
 
-
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
 
@@ -21,10 +20,13 @@ const authRoute = require("./Routes/AuthRoute");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:3000"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
+}));
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use("/", authRoute);
 
 app.get("/allHoldings", async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
@@ -59,3 +61,6 @@ app.listen(PORT, () => {
   mongoose.connect(uri);
   console.log("DB Connected");
 });
+
+app.use("/", authRoute);
+

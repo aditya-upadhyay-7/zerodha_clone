@@ -31,7 +31,7 @@ function Universe() {
         className="p-2 btn btn-primary fs-5 mt-3 mb-5"
         style={{ width: "12%", margin: "0 auto", backgroundColor: "#387ED1" }}
       >
-        Singup now
+        <a href='/signup' style={{textDecoration:"none", color:"white"}}>Singup now</a>
       </button>
     </div>
     </div>

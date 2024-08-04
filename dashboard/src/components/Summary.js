@@ -6,8 +6,9 @@ const Summary = () => {
       <div className="welcome">
         <h2>Welcome to Kite!</h2> 
         <button className='btn' style={{backgroundColor:"#FF5722"}}><a style={{textDecoration:"none", color:"white"}} href="http://localhost:3000/user">Move to Zerodha</a></button>
-        <hr className="divider" />
       </div>
+
+      <hr className="divider" />
 
       <div className="section">
         <span>

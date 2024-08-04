@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
-  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+  // const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
   const handleMeunClick = (index) => {
     setSelectedMenu(index);
   };
 
-  const handleProfileClick = (index) => {
-    setIsProfileDropdownOpen(!isProfileDropdownOpen);
-  };
+  // const handleProfileClick = (index) => {
+  //   setIsProfileDropdownOpen(!isProfileDropdownOpen);
+  // };
 
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
@@ -67,21 +67,12 @@ const Menu = () => {
               <p className={selectedMenu===4 ? activeMenuClass : menuClass}>Funds</p>
             </Link>
           </li>
-          <li>
-            <Link
-              style={{ textDecoration: "none" }}
-              to="/apps"
-              onClick={() => handleMeunClick(5)}
-            >
-              <p className={selectedMenu===5 ? activeMenuClass : menuClass}>Apps</p>
-            </Link>
-          </li>
         </ul>
-        <hr />
+        {/* <hr />
         <div className="profile" onClick={handleProfileClick}>
           <div className="avatar">ZU</div>
           <p className="username">USERID</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

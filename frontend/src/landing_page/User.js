@@ -38,7 +38,7 @@ const User = () => {
         <h4>
           WELCOME <span style={{textTransform:"uppercase"}}>{username}!</span>
         </h4>
-        <button className='p-2 btn btn-primary fs-5 mt-3 mb-2' style={{width:"15%", margin:"0 auto", backgroundColor:"#387ED1"}}><a href="http://localhost:3001/" style={{textDecoration:"none", color:"white"}}>Move to KITE <img style={{width:"30px", marginBottom: "4px", marginLeft: "3px"}} src="media\images\kite-logo.svg" alt="Kite Logo"/></a></button>
+        <button className='p-2 btn btn-primary fs-5 mt-3 mb-2' style={{width:"15%", margin:"0 auto", backgroundColor:"#387ED1"}}><a href="https://zerodha-clone-dashboard-ue4u.onrender.com/" style={{textDecoration:"none", color:"white"}}>Move to KITE <img style={{width:"30px", marginBottom: "4px", marginLeft: "3px"}} src="media\images\kite-logo.svg" alt="Kite Logo"/></a></button>
 
         <button onClick={Logout} className='p-2 btn btn-primary fs-5 mt-3 mb-5' style={{width:"15%", margin:"0 auto", backgroundColor:"#387ED1"}}>Logout</button>
       </div>

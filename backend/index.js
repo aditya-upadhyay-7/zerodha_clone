@@ -21,7 +21,7 @@ const authRoute = require("./Routes/AuthRoute");
 const app = express();
 
 app.use(cors({
-  origin: ["https://zerodha-clone-frontend-337h.onrender.com"],
+  origin: ["https://zerodha-clone-frontend-337h.onrender.com", "https://zerodha-clone-dashboard-ue4u.onrender.com/"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }));

@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Universe() {
+  const navigate = useNavigate();
+
   return (
     <div>
         <div className="text-center">
@@ -29,9 +32,11 @@ function Universe() {
     <div className=" text-center my-5">
       <button
         className="p-2 btn btn-primary fs-5 mt-3 mb-5"
-        style={{ width: "12%", margin: "0 auto", backgroundColor: "#387ED1" }}
+        style={{ width: "12%", margin: "0 auto", backgroundColor: "#387ED1" }} onClick={() => {
+          navigate("/signup");
+        }}
       >
-        <a href='https://zerodha-clone-frontend-337h.onrender.com/signup' style={{textDecoration:"none", color:"white"}}>Singup now</a>
+       Singup now
       </button>
     </div>
     </div>

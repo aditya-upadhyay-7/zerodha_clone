@@ -15,10 +15,10 @@ module.exports.Signup = async (req, res, next) => {
       username,
       createdAt,
     });
-    const token = createSecretToken(user._id);
+    const token = createSecretToken(user.email);
     res.cookie("token", token, {
       withCredentials: true,
-      httpOnly: false,
+      httpOnly: true,
     });
     res
       .status(201)

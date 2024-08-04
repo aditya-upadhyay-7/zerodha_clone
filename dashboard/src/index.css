@@ -328,6 +328,21 @@ hr {
   font-weight: 300;
 }
 
+.welcome {
+  display: flex;
+  font-size: 1.3rem;
+}
+
+.welcome button{
+  font-size: 17px;
+  margin-left: auto;
+  margin-top: 25px !important; 
+  width: 200px !important;
+  height: 50px;
+  border-radius: 10px;
+
+}
+
 /* sudo selectors */
 
 .menu:hover {

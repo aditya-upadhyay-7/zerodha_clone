@@ -3,8 +3,9 @@ import React from "react";
 const Summary = () => {
   return (
     <>
-      <div className="username">
-        <h6>Hi, User!</h6>
+      <div className="welcome">
+        <h2>Welcome to Kite!</h2> 
+        <button className='btn' style={{backgroundColor:"#FF5722"}}><a style={{textDecoration:"none", color:"white"}} href="http://localhost:3000/user">Move to Zerodha</a></button>
         <hr className="divider" />
       </div>
 

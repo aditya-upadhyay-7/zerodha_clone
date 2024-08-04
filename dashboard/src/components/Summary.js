@@ -5,7 +5,7 @@ const Summary = () => {
     <>
       <div className="welcome">
         <h2>Welcome to Kite!</h2> 
-        <button className='btn' style={{backgroundColor:"#FF5722"}}><a style={{textDecoration:"none", color:"white"}} href="http://localhost:3000/user">Move to Zerodha</a></button>
+        <button className='btn' style={{backgroundColor:"#FF5722"}}><a style={{textDecoration:"none", color:"white"}} href="https://zerodha-clone-frontend-337h.onrender.com/user">Move to Zerodha</a></button>
       </div>
 
       <hr className="divider" />

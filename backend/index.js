@@ -21,7 +21,7 @@ const authRoute = require("./Routes/AuthRoute");
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:3000"],
+  origin: ["https://zerodha-clone-frontend-337h.onrender.com"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }));

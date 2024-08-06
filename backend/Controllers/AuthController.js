@@ -20,6 +20,8 @@ module.exports.Signup = async (req, res, next) => {
       withCredentials: true,
       credentials: 'include',
       httpOnly: true,
+      sameSite: 'none',
+      secure: true
     });
     res
       .status(201)

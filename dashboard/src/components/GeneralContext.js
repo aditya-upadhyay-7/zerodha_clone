@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 import BuyActionWindow from "./BuyActionWindow";
+import { useNavigate } from "react-router-dom";
+
 
 const GeneralContext = React.createContext({
   openBuyWindow: (uid) => {},
@@ -8,17 +10,21 @@ const GeneralContext = React.createContext({
 });
 
 export const GeneralContextProvider = (props) => {
+  const navigate = useNavigate();
+
   const [isBuyWindowOpen, setIsBuyWindowOpen] = useState(false);
   const [selectedStockUID, setSelectedStockUID] = useState("");
 
   const handleOpenBuyWindow = (uid) => {
     setIsBuyWindowOpen(true);
     setSelectedStockUID(uid);
+    navigate("/");
   };
 
   const handleCloseBuyWindow = () => {
     setIsBuyWindowOpen(false);
     setSelectedStockUID("");
+    navigate("/");
   };
 
   return (

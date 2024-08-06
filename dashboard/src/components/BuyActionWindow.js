@@ -7,11 +7,9 @@ import GeneralContext from "./GeneralContext";
 
 import "./BuyActionWindow.css";
 import server from "../environment";
-import { useNavigate } from "react-router-dom";
 
 
 const BuyActionWindow = ({ uid }) => {
-  const navigate = useNavigate();
 
 
   const [stockQuantity, setStockQuantity] = useState(1);
@@ -26,7 +24,6 @@ const BuyActionWindow = ({ uid }) => {
     });
 
     GeneralContext.closeBuyWindow();
-    navigate("/");
   };
 
   const handleCancelClick = () => {

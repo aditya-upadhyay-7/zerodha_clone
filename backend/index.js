@@ -21,9 +21,10 @@ const authRoute = require("./Routes/AuthRoute");
 const app = express();
 
 app.use(cors({
-  origin: ["https://zerodha-clone-frontend-337h.onrender.com", "https://zerodha-clone-dashboard-ue4u.onrender.com/"],
+  origin: ["https://zerodha-clone-frontend-337h.onrender.com", "https://zerodha-clone-dashboard-ue4u.onrender.com"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
+  allowedHeaders: "content-type",
 }));
 app.use(bodyParser.json());
 app.use(cookieParser());

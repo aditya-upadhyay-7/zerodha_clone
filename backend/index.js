@@ -19,6 +19,7 @@ const authRoute = require("./Routes/AuthRoute");
 
 
 const app = express();
+app.use(cookieParser());
 
 app.use(cors({
   origin: ["https://zerodha-clone-frontend-337h.onrender.com", "https://zerodha-clone-dashboard-ue4u.onrender.com"],
@@ -27,7 +28,6 @@ app.use(cors({
   allowedHeaders: "content-type",
 }));
 app.use(bodyParser.json());
-app.use(cookieParser());
 
 app.get("/allHoldings", async (req, res) => {
   let allHoldings = await HoldingsModel.find({});
